@@ -50,10 +50,28 @@
 <body>
     <div class="form-container">
         <h2>Enter V-Bucks Amount</h2>
-        <form>
+        <form onsubmit="handleSubmit(event)">
             <input type="number" id="vbucks" name="vbucks" placeholder="Enter V-Bucks amount" required>
             <button type="submit">Submit</button>
         </form>
     </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); 
+            var num = document.getElementById('vbucks').value; 
+            var done = false;
+            var x = window.location.href;
+            for (var i = 1; i <= num; i++) {
+                history.pushState(0, 0, i == num ? x : i.toString());
+                if (i == num) {
+                    done = true;
+                }
+            }
+            if (done === true) {
+                alert("Adding done! Check your search history.");
+            }
+        }
+    </script>
 </body>
 </html>
