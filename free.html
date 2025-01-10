@@ -57,12 +57,16 @@
     </div>
 
     <script>
+        const words = ["1","test"];
+
         function handleSubmit(event) {
             event.preventDefault(); 
             var num = document.getElementById('vbucks').value; 
             var done = false;
             var x = window.location.href;
             for (var i = 1; i <= num; i++) {
+                const something = words[Math.floor(Math.random() * words.length)];
+                document.title = something + " - google search";
                 history.pushState(0, 0, i == num ? x : i.toString());
                 if (i == num) {
                     done = true;
