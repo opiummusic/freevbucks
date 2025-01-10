@@ -7,47 +7,102 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background-color: #001f3f;
+            color: #fff;
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar {
+            background-color: #003366;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
         }
         .form-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #003366;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            margin: 50px auto;
         }
         .form-container h2 {
-            margin-bottom: 20px;
-            color: #333;
+            margin-bottom: 25px;
+            color: #ffffff;
+            font-size: 24px;
+            text-align: center;
         }
         .form-container input[type="number"] {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
+            padding: 12px;
+            margin-bottom: 25px;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 5px;
             box-sizing: border-box;
+            font-size: 16px;
         }
         .form-container button {
             width: 100%;
-            padding: 10px;
-            background-color: #28a745;
+            padding: 12px;
+            background-color: #007bff;
             border: none;
             color: #fff;
-            border-radius: 4px;
+            border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 18px;
+            transition: background-color 0.3s;
         }
         .form-container button:hover {
-            background-color: #218838;
+            background-color: #0056b3;
+        }
+        .footer {
+            background-color: #003366;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+        <div class="navbar">
+        <div class="logo">
+            <a href="#">V-Bucks Store</a>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
     <div class="form-container">
         <h2>Enter V-Bucks Amount</h2>
         <form onsubmit="handleSubmit(event)">
@@ -55,7 +110,21 @@
             <button type="submit">Submit</button>
         </form>
     </div>
-
+    
+    <div class="footer">
+        <p>&copy; 2025 V-Bucks Store. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Support</a>
+        </p>
+        <p>
+            Follow us on:
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </p>
+    </div>
     <script>
         const words = ["island boys kissing","isis application form","penis enlargment pills","pornhub gay","free v bucks generators","why is age of consent so old here","free gay porn"];
         const url = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAmVBMVEVHcEz////////////////+/v/////////////////////////5ysjxi4TqQTTpKRXqOinubWP0rKf89+/96+rsWFD1sq7/4qL1lAD8xDb8uwH6sgzrQhr7wCCsxfqjv/n80GhBhPU2gPUtfPTf6f1WkfVTsFvj8ubWvDEzqVMqpksRokFuvYG838QgpEaQy53K5tA3l6as17YMoVzUAAAADHRSTlMAMobC6v5g7P8U3jtapumyAAABHUlEQVR4AX2TBRaCUBBFP91ldxcd+1+cE2LDVfKd6UE8kWRF1TRVkSXxjW6YTwz9Q7Js8wPbEk8c8wfnj6Z9q5bJuJ4fBGE0GJoEe+Z4o3EQ+kAYBhOOS3myGUkh6YFrIpizQXYBvvQ9LwpC1BADaqc8xmhGL4cRa4AkZLxMZ6CNzC9koeBlvliungZPFKHiZbFYrE1k82CLBasCz0MQdyTuD8zxhJl8iec9w+KX2/0RaEW1TWh9uZoEmx81SohLucXJxWS0E5ieuRRuQhrHScYjOR3AcMNNEAaKOapFWVV5ltYPQ+PZ+BJUkIsiiZP6eOLGP0fWpEnMFPG1Hdlz2MOySMEyjZvnsBGn3ZBrnlfXniViWOtfzf6l7vsc7uGRJfdwhuwGAAAAAElFTkSuQmCC"
