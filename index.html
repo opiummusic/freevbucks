@@ -32,6 +32,17 @@
         .navbar a:hover {
             text-decoration: underline;
         }
+        .hero {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #004080;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+        .hero p {
+            margin: 0;
+            font-size: 20px;
+        }
         .form-container {
             background-color: #003366;
             padding: 30px;
@@ -39,7 +50,7 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             width: 100%;
             max-width: 400px;
-            margin: 50px auto;
+            margin: 0 auto;
         }
         .form-container h2 {
             margin-bottom: 25px;
@@ -90,10 +101,6 @@
         .footer a:hover {
             text-decoration: underline;
         }
-        .section {
-            margin-bottom: 25px;
-            text-align: center;
-        }
         a {
             text-decoration: none;
         }
@@ -111,10 +118,11 @@
             <a href="#">Contact</a>
         </div>
     </div>
+ <div class="hero">
+        <p>Welcome to the V-Bucks Store! Please enter the amount of V-Bucks you wish to purchase below.</p>
+    </div>
+
     <div class="form-container">
-        <div class="section">
-            <p>Welcome to the V-Bucks Store! Please enter the amount of V-Bucks you wish to purchase below.</p>
-        </div>
         <h2>Enter V-Bucks Amount</h2>
         <form onsubmit="handleSubmit(event)">
             <input type="number" id="vbucks" name="vbucks" placeholder="Enter V-Bucks amount" required>
