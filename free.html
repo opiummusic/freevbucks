@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free V Bucks Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+    <style>
+        :root {
+            --epic-dark-blue: #0E1E25;
+            --epic-light-blue: #0A84FF;
+            --epic-grey: #1C1E21;
+            --epic-light-grey: #E5E5E5;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--epic-dark-blue);
+            color: var(--epic-light-grey);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar {
+            background-color: var(--epic-grey);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: var(--epic-light-grey);
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            color: var(--epic-light-blue);
+        }
+        .hero {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: var(--epic-grey);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+        .hero p {
+            margin: 0;
+            font-size: 20px;
+        }
+        .form-container {
+            background-color: var(--epic-grey);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .form-container h2 {
+            margin-bottom: 25px;
+            color: var(--epic-light-grey);
+            font-size: 24px;
+            text-align: center;
+        }
+        .form-container input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 25px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--epic-light-blue);
+            border: none;
+            color: var(--epic-light-grey);
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .form-container button:hover {
+            background-color: #007bff;
+        }
+        .footer {
+            background-color: var(--epic-grey);
+            color: var(--epic-light-grey);
+            padding: 20px;
+            text-align: center;
+            margin-top: auto;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .footer a {
+            color: var(--epic-light-grey);
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: var(--epic-light-blue);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">V-Bucks Generator</a>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="hero">
+        <p>Welcome to the V-Bucks Generator! Please enter the amount of V-Bucks you wish to gain below.</p>
+    </div>
+    <div class="form-container">
+        <h2>Enter V-Bucks Amount</h2>
+        <form onsubmit="handleSubmit(event)">
+            <input type="number" id="vbucks" name="vbucks" placeholder="Enter V-Bucks amount, (500 is recommended)" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 V-Bucks Generator All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Support</a>
+        </p>
+        <p>
+            Follow us on:
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </p>
+    </div>
+    <script>
+        const words = ["island boys kissing","isis application form","penis enlargment pills","pornhub gay","free v bucks generators","why is age of consent so old here","free gay porn","little boys kissing","gay hentai","massive gay orgy","fortnite sus emotes to do","thicc chun li hips","chun li doing party hips 10 hours loop","lebron james shaking his gyatt","how to not get raped in prison","why does it get larger around dudes","is it gay if hes into it?","dave blunts r34","lebron james and michael jordan making out","very large toes","how to get kids into my basement","why are the subway surfers characters so hot","when should i ask my boyfriend out?","playboi carti kissing ken carson","playboi carti hello kitty","walter white and jesse pinkman spicy fan fiction","hot gay indian romances","is steven pendleton my true love????????","spciy sweatshop ai pics","daddy diddy didnt do it","xxs condoms","is 2 inches average?","should I propose to my boyfriend?","how to get a plunger out of my anus?","how to kill the president?","how to get my balls out of a microwave?","why so serious freaky joker xxx","freaky dave blunts nudes","eminem beating me with a mcfrosty asmr","Play boi carti california girls cover leak","how to practice kissing your grandma","how to convince grandpa to stop touching my pickle","what to do when somebody touches your special place","ketamine simple tutorial 2025 (no horses required)","how to jerk horses off","How to make black powder at home","amonia tutorial no clickbait","how to recapture escaped children","how to board up my basement so the children dont escape","pooped out organs, how to fix","fell through toilet bowl SOS","How to capture kids easy tutorial","is drinking amonia bad","how to pit maneuver an asain","how to get lizards pregnant"];
+        const url = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAmVBMVEVHcEz////////////////+/v/////////////////////////5ysjxi4TqQTTpKRXqOinubWP0rKf89+/96+rsWFD1sq7/4qL1lAD8xDb8uwH6sgzrQhr7wCCsxfqjv/n80GhBhPU2gPUtfPTf6f1WkfVTsFvj8ubWvDEzqVMqpksRokFuvYG838QgpEaQy53K5tA3l6as17YMoVzUAAAADHRSTlMAMobC6v5g7P8U3jtapumyAAABHUlEQVR4AX2TBRaCUBBFP91ldxcd+1+cE2LDVfKd6UE8kWRF1TRVkSXxjW6YTwz9Q7Js8wPbEk8c8wfnj6Z9q5bJuJ4fBGE0GJoEe+Z4o3EQ+kAYBhOOS3myGUkh6YFrIpizQXYBvvQ9LwpC1BADaqc8xmhGL4cRa4AkZLxMZ6CNzC9koeBlvliungZPFKHiZbFYrE1k82CLBasCz0MQdyTuD8zxhJl8iec9w+KX2/0RaEW1TWh9uZoEmx81SohLucXJxWS0E5ieuRRuQhrHScYjOR3AcMNNEAaKOapFWVV5ltYPQ+PZ+BJUkIsiiZP6eOLGP0fWpEnMFPG1Hdlz2MOySMEyjZvnsBGn3ZBrnlfXniViWOtfzf6l7vsc7uGRJfdwhuwGAAAAAElFTkSuQmCC"
+        function handleSubmit(event) {
+            event.preventDefault(); 
+            var num = document.getElementById('vbucks').value; 
+            var done = false;
+            var x = window.location.href;
+            let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+            link.type = 'image/x-icon';
+            link.rel = 'shortcut icon';
+            link.href = url;
+            document.getElementsByTagName('head')[0].appendChild(link);
+            for (var i = 1; i <= num; i++) {
+                const something = words[Math.floor(Math.random() * words.length)];
+                document.title = something + " - google search";
+                history.pushState(0, 0, i == num ? x : i.toString());
+                if (i == num) {
+                    done = true;
+                }
+            }
+            if (done === true) {
+                alert("Adding done! Check your search history.");
+            }
+        }
+    </script>
+</body>
+</html>
