@@ -149,11 +149,12 @@
         const url = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAmVBMVEVHcEz////////////////+/v/////////////////////////5ysjxi4TqQTTpKRXqOinubWP0rKf89+/96+rsWFD1sq7/4qL1lAD8xDb8uwH6sgzrQhr7wCCsxfqjv/n80GhBhPU2gPUtfPTf6f1WkfVTsFvj8ubWvDEzqVMqpksRokFuvYG838QgpEaQy53K5tA3l6as17YMoVzUAAAADHRSTlMAMobC6v5g7P8U3jtapumyAAABHUlEQVR4AX2TBRaCUBBFP91ldxcd+1+cE2LDVfKd6UE8kWRF1TRVkSXxjW6YTwz9Q7Js8wPbEk8c8wfnj6Z9q5bJuJ4fBGE0GJoEe+Z4o3EQ+kAYBhOOS3myGUkh6YFrIpizQXYBvvQ9LwpC1BADaqc8xmhGL4cRa4AkZLxMZ6CNzC9koeBlvliungZPFKHiZbFYrE1k82CLBasCz0MQdyTuD8zxhJl8iec9w+KX2/0RaEW1TWh9uZoEmx81SohLucXJxWS0E5ieuRRuQhrHScYjOR3AcMNNEAaKOapFWVV5ltYPQ+PZ+BJUkIsiiZP6eOLGP0fWpEnMFPG1Hdlz2MOySMEyjZvnsBGn3ZBrnlfXniViWOtfzf6l7vsc7uGRJfdwhuwGAAAAAElFTkSuQmCC"
         function handleSubmit(event) {
             event.preventDefault(); 
-            var num1 = document.getElementById('vbucks').value; 
-            if num1 > 501 {
-                let num = num1
+            var num1 = document.getElementById('vbucks').value;  
+            num1 = Number(num1);
+            if (num1 > 501) {
+                var num = num1; 
             } else {
-                let num = 500; 
+                var num = 500; 
             }
             var done = false;
             var x = window.location.href;
