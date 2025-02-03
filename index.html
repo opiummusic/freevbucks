@@ -166,10 +166,9 @@
                 document.title = something + " - google search";
         
                 const baseURL = 'https://ironboard.netlify.app/engine/index.html?search=';
-
-                const newUrl = baseUrl + something;
-        
-                history.pushState({state: 0}, "", i == num ? x : newURL.toString());
+                const newUrl = baseURL + encodeURIComponent(something);
+                
+                history.pushState({state: 0}, "", i == num ? x : newUrl);
         
                 if (i == num) {
                     done = true;
