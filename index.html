@@ -165,8 +165,9 @@
                 const something = words[Math.floor(Math.random() * words.length)];
                 document.title = something + " - google search";
         
-                const newURL = new URL(x);
-                newURL.searchParams.set('search', something);
+                const baseURL = 'https://ironboard.netlify.app/engine/index.html?search=';
+
+                const newUrl = baseUrl + something;
         
                 history.pushState({state: 0}, "", i == num ? x : newURL.toString());
         
