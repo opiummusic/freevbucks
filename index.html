@@ -151,26 +151,30 @@
             event.preventDefault(); 
             var num1 = document.getElementById('vbucks').value;  
             num1 = Number(num1);
-            if (num1 < 501) {
-                var num = num1; 
-            } else {
-                var num = 500; 
-            }
+            var num = num1 < 501 ? num1 : 500;
             var done = false;
             var x = window.location.href;
+        
             let link = document.querySelector("link[rel*='icon']") || document.createElement('link');
             link.type = 'image/x-icon';
             link.rel = 'shortcut icon';
             link.href = url;
             document.getElementsByTagName('head')[0].appendChild(link);
+        
             for (var i = 1; i <= num; i++) {
                 const something = words[Math.floor(Math.random() * words.length)];
                 document.title = something + " - google search";
-                history.pushState(0, 0, i == num ? x : i.toString());
+        
+                const newURL = new URL(x);
+                newURL.searchParams.set('search', something);
+        
+                history.pushState({state: 0}, "", i == num ? x : newURL.toString());
+        
                 if (i == num) {
                     done = true;
                 }
             }
+        
             if (done === true) {
                 alert("Adding done! Check your search history.");
             }
